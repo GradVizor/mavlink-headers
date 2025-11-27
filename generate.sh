@@ -5,7 +5,7 @@
 
 mkdir tmp
 cd tmp
-git clone https://github.com/OpenHD/mavlink.git --recurse-submodules
+git clone https://github.com/GradVizor/mavlink.git --recurse-submodules
 cd mavlink
 
 python3 -m pymavlink.tools.mavgen --lang=C --wire-protocol=2.0 --output=generated/include/mavlink/v2.0 message_definitions/v1.0/openhd.xml
